@@ -1,0 +1,130 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: gilroy;
+    color: #fff;
+ 
+}
+body{
+    background-color:rgba(10, 2, 27, 0.696);
+   
+}
+html , body{
+    height: 100%;
+    width: 100%;
+    
+    
+}
+
+#main{
+    height:100%;
+    width: 100%;
+    display: flex;
+    padding: 5vw 10vw;
+}
+
+ #left{
+    height: 32vw;
+    width: 30vw;
+    /* background-image: url(image/Tum\ Hi\ Ho.jpg); */
+
+    background-size: cover;
+    background-position: top; 
+    border-radius: 15px;
+    left: 64vw;
+    top: 9vw;
+    /* position: absolute; */
+    position: fixed;
+
+} 
+
+#right{
+    position: relative;
+    height: 100%;
+    width: 60%;
+    right: 5vw; 
+    padding: 2vw 0;
+   
+}
+ h3{
+    font-size: 3rem;
+    font-family: cursive;
+    color: rgb(246, 6, 6);
+    position: relative;
+    bottom: 4vw;
+    display: inline;
+    padding: 4px 5px ;
+    border-radius: 15px;
+    left: 5vw;
+    border-bottom: 4px solid white;
+
+
+}
+
+.song-card{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid white;
+    padding: 28px 15px;
+}
+.song-card:hover{
+    background-color: #556764ab
+}
+.song-card:nth-last-child(1){
+    border-bottom: 1px solid #5a5a5aa5;
+}
+.song-card .part1{
+    display: flex;
+    align-items: center;
+    pointer-events: none;
+}
+.song-card img{
+    height: 65px;
+    width: 65px;
+    margin-right: 20px;
+    border-radius: 10px;
+
+}
+
+.song-card h2{
+    font-size: 22px;
+    font-weight: 600;
+    color: rgb(243, 240, 240);
+
+
+}
+.song-card h6{
+    font-weight: 500;
+    font-size: 16px;
+}
+
+#player{
+    /* position: fixed; */
+    position: relative;
+    top: 75vw;
+    height: 10%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.697);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+#player h4{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+#player h4 i{
+    font-size: 28px;
+}
+
+#player h4:active{
+    scale: 0.93;
+}
