@@ -4,17 +4,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Music player</title>
+    <title>Music Player</title>
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet" />
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="image/favicon-32x32.png">
-
+    <link rel="shortcut icon" href="favicon/download.jpg">
+   
 </head>
 
 <body>
+    <nav>
+        <div class="left-logo">
+            <img src="favicon/download.jpg" alt="">
+        </div>
+        <div class="search-bar">
+            <span class="search-bar">
+                <i class="ri-search-line"></i>
+                <input type="text" id="searchInput" placeholder="Search any Songs here..." />
+            </span>
+            
+        </div>
+       
+         
+       
+
+    </nav>
     <div id="main">
         <div id="right">
-            <h3>Songs List.</h3>
+            <h3> Exist Songs List.</h3>
             <div id="all-songs">
                 
             </div>
@@ -25,6 +41,12 @@
         <h4 id="backward"><i class="ri-skip-back-mini-fill"></i></h4>
         <h4 id="play"><i class="ri-play-fill"></i></h4>
         <h4 id="forward"><i class="ri-skip-forward-mini-fill"></i></h4>
+
+        <!-- <div class="volume-control">
+            <label for="volume-slider">Volume</label>
+            <input type="range" id="volume-slider" min="0" max="1" step="0.01" value="0.5">
+        </div>
+         -->
     </div>
 
     <script src="script.js"></script>

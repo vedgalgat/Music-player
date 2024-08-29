@@ -8,8 +8,81 @@
  
 }
 body{
-    background-color:rgba(10, 2, 27, 0.696);
+    background-color:rgb(3, 3, 13);
    
+}
+nav{
+    background-color: rgba(72, 8, 8, 0.535);
+    height: 15%;
+    width: 100%;
+    /* position: fixed;
+    z-index: 1; */
+}
+.left-logo{
+
+    position: absolute;
+    padding: 1vw 5vw;
+   
+}
+@keyframes pulsate {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 10px rgba(128, 0, 128, 0.6),0 0 20px purple;
+    }
+    100% {
+        transform: scale(1.1);
+        box-shadow: 0 0 20px rgba(128, 0, 128, 0.9),0  0 25px purple;
+    }
+  
+}
+
+.left-logo img{
+    height: 5vw ;
+    width: 5vw;
+    border-radius: 50%;
+    box-shadow: 0  0 10px purple, 0  0 15px purple,0 0 20px purple;
+    /* animation: pulsate 1s infinite linear; */
+    animation:pulsate 1s linear infinite
+}
+
+.search-bar {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 17vw;
+    margin-top: 2vw;
+}
+
+#searchInput {
+    position: relative;
+    /* flex-grow: 1; */
+    width: 40%;
+    padding: 10px 13px 15px 50px;
+    border-radius: 30px;
+    border: 1px solid #cccccc6d;
+    outline: none;
+    color: black;
+    font-size: 1.3rem;
+    background-color: rgba(255, 255, 255, 0.81)
+
+}
+i{
+    position: relative;
+    z-index:1;
+    font-size:1.6rem;
+    color: rgb(79, 48, 48);
+    cursor: pointer;
+    left: 3vw; 
+    outline: none;
+    border: none;
+
+}
+::placeholder{
+    color: red;
+    /* align-items: center; */
+    text-align: center;
 }
 html , body{
     height: 100%;
@@ -28,15 +101,14 @@ html , body{
  #left{
     height: 32vw;
     width: 30vw;
-    /* background-image: url(image/Tum\ Hi\ Ho.jpg); */
-
     background-size: cover;
     background-position: top; 
-    border-radius: 15px;
+    border-radius:20px;
     left: 64vw;
     top: 9vw;
-    /* position: absolute; */
     position: fixed;
+    border: 2px solid;
+    border-image:linear-gradient(rgb(109, 202, 202), rgb(16, 16, 84), rgb(209, 209, 36), rgb(163, 29, 29), rgb(16, 180, 16))1;
 
 } 
 
@@ -50,8 +122,8 @@ html , body{
 }
  h3{
     font-size: 3rem;
-    font-family: cursive;
-    color: rgb(246, 6, 6);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: purple;
     position: relative;
     bottom: 4vw;
     display: inline;
@@ -107,7 +179,7 @@ html , body{
     top: 75vw;
     height: 10%;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.697);
+    background-color: rgba(85, 127, 127, 0.488);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -128,3 +200,8 @@ html , body{
 #player h4:active{
     scale: 0.93;
 }
+#player i{
+    color: white;
+}
+    
+ 
